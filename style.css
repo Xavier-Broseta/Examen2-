@@ -34,3 +34,7 @@ footer{
 span.nombre{
     color: red;
 }
+
+input.bitcoin{
+    color: red;
+}
