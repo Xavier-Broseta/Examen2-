@@ -7,12 +7,8 @@
     <title>examen aplicacions web</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-     
-    
-
-</script>
 <body>
+    
     <header>
         <h1 class="titulo"><a href="index.html">Criptomonedas</a> </h1>
 <hr>
@@ -22,10 +18,10 @@
             
             <form name="bitcoin" action="bitcoin.php" method="get" >
                 
-            Bitcoin <input type="number" name="primera" id="bitcoin"> Valor 39.262
+            Bitcoin <input type="number" name="primera" id="numero1"> Valor 39.262
             <br>
             <br>
-            Cantidad de monedas <input onblur="envio()" name="segunda" class="bitcoin" type="number"> Valor <input name="3" type="number" name="total" id="total" >
+            Cantidad de monedas <input onblur="envio()" class="bitcoin" name="segunda" id="numero2" type="number"> Valor <input onblur="mult()" name="3" type="number" name="total" id="numero3" >
         </form>
         
         
@@ -35,11 +31,24 @@
 <script>
     function envio(){
         var Number=document.getElementById("numero1").value 
-        document.getElementById(numero2)
+        document.getElementById("numero2").value=Number
+    
     }
+    
+
+    </script>
+
+    <script>
+        function mult(){
+            var Number=document.getElementById("numero2").value 
+        document.getElementById("numero3").value*(12)=Number 
+        }
+    </script>
     </main>
+    
     <footer>
         <p>Web desarrollada por <span class="nombre">Xavier Broseta Sillero</span> </p>
      </footer>
 </body>
+
 </html>
